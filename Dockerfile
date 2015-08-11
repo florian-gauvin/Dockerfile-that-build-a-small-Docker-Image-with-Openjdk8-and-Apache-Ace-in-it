@@ -55,6 +55,9 @@ WORKDIR /usr/buildroot-2015.05/output/images
 
 RUN tar -xf rootfs.tar &&\
 	rm rootfs.tar
+	
+#Add the resources
+ADD resources /usr/buildroot-2015.05/output/images/tmp
 
 #Compile the 3 compact profiles of Openjdk8, for more information about the compact profiles of openjdk8 see this link : http://openjdk.java.net/jeps/161
 
