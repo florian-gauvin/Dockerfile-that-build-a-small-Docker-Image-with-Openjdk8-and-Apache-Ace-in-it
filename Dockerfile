@@ -90,7 +90,7 @@ RUN cp -fr /usr/openjdk8/build/linux-x86_64-normal-zero-release/images/j2re-comp
 
 ENTRYPOINT for i in `seq 0 100`; do sudo mknod -m0660 /dev/loop$i b 7 $i; done && \
 	service docker start && \
-	docker import - ace.image < /usr/buildroot-2015.05/output/images/rootfs.tar &&\
+	docker import - inaetics/ace-agent < /usr/buildroot-2015.05/output/images/rootfs.tar &&\
 	/bin/bash
 
 
