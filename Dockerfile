@@ -82,6 +82,10 @@ RUN cp -fr /usr/openjdk8/build/linux-x86_64-normal-zero-release/images/j2re-comp
 	cd /usr/buildroot-2015.05/output/images/ &&\
 	tar -cf rootfs.tar *
 
+# Either uncomment this line, or map the bundles folder as a docker volume to /bundles when starting the container!
+
+#ADD bundles /usr/buildroot-2015.05/output/images/bundles
+
 #When the builder image is launch, it creates the openjdk8 and ace docker image that you will be able to see by running the command : docker images
 
 ENTRYPOINT for i in `seq 0 100`; do sudo mknod -m0660 /dev/loop$i b 7 $i; done && \

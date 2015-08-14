@@ -132,7 +132,7 @@ if [ "$provisioning_port" == "" ]; then
   provisioning_port=8080
 fi
 
-JAVA_PROPS="-Dace.gogo.script=default-mapping.gosh"
+JAVA_PROPS="-Dace.gogo.script=/bundles/default-mapping.gosh"
 if [ $GOSH_NONINTERACTIVE ]; then
   JAVA_PROPS="$JAVA_PROPS -Dgosh.args=--nointeractive"
 fi
