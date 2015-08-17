@@ -12,10 +12,12 @@ RUN apt-get update && apt-get install -y \
 	python \
 	wget \
 	unzip \
-	bc\
+	bc \
+	g++ \
 	language-pack-en \
 	mercurial \
 	zip \
+	curl \
 	openjdk-7-jdk \
 	libcups2-dev \
 	libfreetype6-dev \
