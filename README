@@ -1,4 +1,5 @@
-Here you can find a Dockerfile that can create a small docker image with Openjdk8 and Apache Ace.
+Here you can find a Dockerfile that can create a small docker image with Openjdk8 and Apache Ace. This Dockerfile is useful for this INAETICS project.
+
 To use this dockerfile :
 Be sure to either uncomment the "ADD bundles /bundles" line in the Dockerfile, or map the "bundles" folder as a docker volume to /bundles when starting the container! 
 
@@ -26,5 +27,6 @@ BE CAREFUL :
 
 If you want more information about the dockerfile, see the comments in the Dockerfile.
 
-
+If you want to have the same image but faster, wihout all the steps, and a Dockerfile which size is lesser go here : 
+https://github.com/florian-gauvin/Small-Dockerfile-Ace
 
